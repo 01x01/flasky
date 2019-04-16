@@ -13,6 +13,8 @@ pymysql = "*"
 flask-migrate = "*"
 flask-mail = "*"
 flask-moment = "*"
+flask-login = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.7"

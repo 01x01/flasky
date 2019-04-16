@@ -10,7 +10,8 @@ class Config:
     MAIL_USERNAME=os.getenv('MAIL_USERNAME')
     MAIL_PASSWORD=os.getenv('MAIL_PASSWORD')
     MAIL_SUBJECT_PREFIX='[Flask]'
-    MAIL_SENDER=os.getenv('MAIL_SENDER')
+    MAIL_SENDER=os.getenv('MAIL_USERNAME')
+    MAIL_PORT=os.getenv("MAIL_PORT")
 
     # 数据库设置
     SQLALCHEMY_TRACK_MODIFICATIONS=False

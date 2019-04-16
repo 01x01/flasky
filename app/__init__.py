@@ -26,5 +26,6 @@ def create_app(config_name):
     app.register_blueprint(main_bp)
     from .error import error as error_bp
     app.register_blueprint(error_bp)
-
+    from .auth import auth as auth_bp
+    app.register_blueprint(auth_bp)
     return app

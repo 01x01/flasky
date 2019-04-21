@@ -9,7 +9,7 @@ class RegisterForm(FlaskForm):
     email = StringField("Email: ", validators=[DataRequired(),Email()])
     password = PasswordField('Password: ', validators=[DataRequired(), Length(8,16)])
     password2 = PasswordField("Enter Password Again: ", validators=[DataRequired(),Length(8,16),EqualTo('password')])
-    submit = SubmitField('Submit: ')
+    submit = SubmitField('Submit')
 
     def validate_email(self,filed):
         u = User.query.filter_by(email=filed.data).first()
